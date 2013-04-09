@@ -1,0 +1,19 @@
+HOW TO:
+******
+You must specify a list of bytes or fields and an input file
+EX1: ./cutem -b 1,2,3 -i FILEPATH 
+EX2: ./cutem -b 2,3 -i FILEPATH -c
+EX3: ./cutem -f 1,2 -i FILEPATH
+EX4: ./cutem -f 1,3 -d : -i FILEPATH -c
+
+Use -b OR -f
+Use -d ONLY with -f
+
+OPTIONS:
+*******
+-b b1,b2,..,bn -i INPUT   select only these bytes
+-f f1,f2,..,fn -i INPUT   select only these fields
+-i INPUT                  work on this input file 
+-d DEL                    use DELIM instead of TAB for field delimiter
+-c                        complement the set of selected bytes or fields
+
